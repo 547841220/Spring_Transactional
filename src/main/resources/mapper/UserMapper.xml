@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jiji.mybatistest.mapper.UserMapper">
+    
+    <resultMap id="BaseResultMap" type="com.jiji.mybatistest.entity.User">
+        <id column="user_id" jdbcType="BIGINT" property="userId"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+    </resultMap>
+    
+    <select id="query" resultMap="BaseResultMap">
+        select * from user_table
+    </select>
+</mapper>

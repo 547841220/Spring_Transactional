@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:mysql://10.100.96.218:3306/iot_hotel
+    username: root
+    password: Greentree
+    driverClassName: com.mysql.jdbc.Driver
+server:
+  port: 8081
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.jiji.mybatistest.entity
